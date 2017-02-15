@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="AzureApp"
+     ProductID="{c9b04a8d-2f47-44cf-8fef-8de0420c5f2e}"
+     Version="1.0.0.0"
+     SharePointMinVersion="16.0.0.0"
+>
+  <Properties>
+    <Title>AzureApp</Title>
+    <StartPage>https://ruchitadev.azurewebsites.net/Pages/Default.aspx?{StandardTokens}</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <RemoteWebApplication ClientId="9e7d69a6-8f2e-4368-9d8c-c44961298c48" />
+  </AppPrincipal>
+  <AppPermissionRequests>
+    <AppPermissionRequest Scope="http://sharepoint/content/sitecollection/web" Right="FullControl" />
+    <AppPermissionRequest Scope="http://sharepoint/content/sitecollection/web/list" Right="FullControl" />
+  </AppPermissionRequests>
+</App>
